@@ -1,0 +1,106 @@
+section.team {
+    background: url('/img/ArtboardTeam.svg') no-repeat center;
+    background-size: cover;
+    color: @white;
+    justify-content: center;
+    align-items: center;
+
+    @media @mobile {
+        margin-top: 150px;
+    }
+
+    .team-div {
+        border: 1px solid @white;
+        height: 250px;
+
+        @media @mobile {
+            width: 90%;
+        }
+
+        h1 {
+            @media @tablet {
+                margin: auto 50px;
+                text-align: center;
+            }
+
+            @media @mobile {
+                margin: auto 50px;
+            }
+        }
+    }
+} 
+
+section.team-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+   
+
+    img {
+        width: 50%;
+    }
+
+    div.members {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        background: @navy;
+        box-shadow: 10px 10px 5px 0px #75757575;
+
+        @media @tablet {
+            width: 85%;
+        }
+
+        @media @mobile {
+            width: 85%;
+        }
+
+        hr {
+            background: black;
+            width: 100%;
+            border-radius: 30%;
+        }
+
+        div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            color: white;
+
+            i {
+                font-size: 4rem;
+                color: @viridian;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 15px;
+            }
+            div {
+                width: 40%;
+
+                @media @mobile {
+                    width: 75%;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

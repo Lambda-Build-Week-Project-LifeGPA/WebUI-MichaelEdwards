@@ -1,0 +1,97 @@
+section.about {
+    background: url('/img/ArtboardAbout.svg') no-repeat center;
+    background-size: cover;
+    color: @white;
+    justify-content: center;
+    align-items: center;
+
+    @media @mobile {
+        margin-top: 150px;
+    }
+
+    h2 { 
+        color: #41826E;
+    }
+
+    .about-div {
+        border: 1px solid @white;
+        height: 250px;
+
+        @media @mobile {
+            width: 90%;
+        }
+
+        h1 {
+            @media @tablet {
+                margin: auto 50px;
+                text-align: center;
+            }
+
+            @media @mobile {
+                margin: auto 50px;
+                text-align: center;
+            }
+        }
+
+        h2 {
+            @media @mobile {
+               font-size: 1.5rem;
+            }
+        }
+    }
+} 
+
+section.about-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+   
+
+    img {
+        width: 50%;
+
+        @media @mobile {
+            width: inherit;
+        }
+    }
+
+    div.about-content {
+        background: url('/img/bump-collaboration-colleagues-1068523.jpg') no-repeat;
+        background-size: contain;
+        height: 550px;
+        width: 60%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        @media @tablet {
+            height: 100%;
+        }
+
+        @media @mobile {
+            height: inherit;
+            width: 100%;
+        }
+
+        article {
+            width: 75%;
+            background: white;
+            font-size: 1.5rem;
+            text-align: center;
+            background-color: rgb(5,34,10, .7);
+            color: white;
+
+            @media @tablet {
+                width: 100%;
+            }
+
+            @media @mobile {
+                width: 100%;
+                font-size: 1rem;
+            }
+        }
+    }
+}

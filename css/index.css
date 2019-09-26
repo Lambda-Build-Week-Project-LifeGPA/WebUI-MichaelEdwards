@@ -1,0 +1,755 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: url('/img/ArtboardUniversal.svg') repeat;
+}
+.hero-section {
+  display: flex;
+  flex-flow: row nowrap;
+  background: url('/img/Artboard\ 1.svg') no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+@media (max-width: 500px) {
+  .hero-section {
+    flex-flow: column nowrap;
+    margin-top: 150px;
+  }
+}
+.hero-section .div-1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .hero-section .div-1 {
+    width: 100%;
+  }
+}
+.hero-section .div-1 h1 {
+  font-size: 50px;
+  margin-left: 38px;
+}
+@media (max-width: 500px) {
+  .hero-section .div-1 h1 {
+    text-align: center;
+  }
+}
+.hero-section .div-1 h2 {
+  font-size: 40px;
+}
+@media (max-width: 500px) {
+  .hero-section .div-1 h2 {
+    font-size: 2rem;
+  }
+}
+.hero-section .div-1 .btn-container {
+  margin-left: 190px;
+}
+@media (max-width: 500px) {
+  .hero-section .div-1 .btn-container {
+    margin: auto 0px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section .div-1 .btn-container a {
+    width: 40%;
+  }
+}
+.hero-section .div-1 .btn-container a img {
+  width: 25%;
+}
+@media (max-width: 500px) {
+  .hero-section .div-1 .btn-container a img {
+    width: 100%;
+  }
+}
+@media (max-width: 1050px) {
+  .hero-section .div-1 .btn-container a img {
+    width: 45%;
+  }
+}
+.hero-section div p {
+  width: 50%;
+  margin-right: 20px;
+}
+.hero-section .div-2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .hero-section .div-2 {
+    display: none;
+  }
+}
+.hero-section .div-2 img {
+  height: 500px;
+}
+@media (max-width: 500px) {
+  .hero-section .div-2 img {
+    display: none;
+  }
+}
+section.features {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 45px;
+}
+@media (max-width: 500px) {
+  section.features {
+    margin-bottom: 225px;
+  }
+}
+section.features div.Features {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: center;
+  text-align: center;
+  background: url('/img/ArtboardUniversal.svg') repeat;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  section.features div.Features {
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+section.features div.Features article {
+  width: 25%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  section.features div.Features article {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+section.features div.Features article i {
+  margin-bottom: 20px;
+  color: #41826E;
+  font-size: 1.5rem;
+}
+section.content {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 500px;
+  width: 100%;
+  margin-top: 50px;
+  background: #092432;
+}
+@media (max-width: 500px) {
+  section.content {
+    height: 550px;
+  }
+}
+section.content .HowTo {
+  width: 100%;
+  height: 100%;
+}
+section.content .HowTo h3 {
+  font-size: 1rem;
+  color: white;
+}
+@media (max-width: 500px) {
+  section.content .HowTo h3 {
+    font-size: 1.5rem;
+  }
+}
+section.content .HowTo .cnt {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 30px;
+}
+@media (max-width: 500px) {
+  section.content .HowTo .cnt {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.content .HowTo .cnt img {
+  height: 100%;
+  width: 56%;
+}
+@media (max-width: 500px) {
+  section.content .HowTo .cnt img {
+    margin-bottom: 20px;
+  }
+}
+section.content .HowTo .cnt div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 25%;
+  width: 25%;
+  margin: auto 0px;
+}
+@media (max-width: 500px) {
+  section.content .HowTo .cnt div {
+    width: 100%;
+  }
+}
+section.content .HowTo .cnt div article {
+  margin: 14px 0px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+  color: white;
+}
+section.content .HowTo .cnt div article i {
+  margin-bottom: 20px;
+  color: #41826E;
+  font-size: 1.5rem;
+}
+section.content .HowTo .cnt div article p {
+  font-size: 0.8em;
+}
+section.content .HowTo .cnt div #noBorder {
+  border-bottom: none;
+}
+section.info {
+  display: flex;
+  height: 500px;
+  width: 50%;
+  flex-flow: row wrap;
+  margin: auto;
+  padding-top: 50px;
+  background: url('/img/ArtboardUniversal.svg') repeat;
+}
+@media (max-width: 1050px) {
+  section.info {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  section.info {
+    height: 600px;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+}
+section.info div {
+  height: 45%;
+  width: 45%;
+  margin: 10px;
+  background-color: #C0C0C0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #41826E;
+}
+@media (max-width: 500px) {
+  section.info div {
+    width: initial;
+  }
+}
+section.info div p {
+  text-align: center;
+  padding: 0 15px;
+}
+h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+section.appImages {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+section.appImages .thumbnail {
+  max-width: 100%;
+}
+section.appImages .appImg {
+  width: 25%;
+}
+section.appImages .lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+section.appImages .lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+section.appImages .lightbox:target {
+  outline: none;
+  display: block;
+}
+footer {
+  height: 75vh;
+  width: 100%;
+  background: #092432;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1050px) {
+  footer {
+    height: 25vh;
+  }
+}
+footer .logo {
+  filter: contrast(0.5);
+}
+footer div.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  footer div.form {
+    width: 94%;
+  }
+}
+footer div.form input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  background: #092432;
+  margin-top: 25px;
+}
+footer div.form button {
+  height: 50px;
+  width: 100px;
+  background: #41826E;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-top: 25px;
+  color: #FFFFFF;
+}
+footer div.social-links {
+  width: 10%;
+}
+@media (max-width: 500px) {
+  footer div.social-links {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer div.social-links a {
+  text-decoration: none;
+  color: #41826E;
+}
+footer div.social-links a i {
+  font-size: 3rem;
+}
+footer div.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 10%;
+  font-size: 0.8rem;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.header header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .header header {
+    flex-flow: column nowrap;
+  }
+}
+.header header .logo {
+  margin-top: 30px;
+}
+@media (max-width: 500px) {
+  .header header .logo {
+    margin-top: 110px;
+    width: 75%;
+  }
+}
+.header header nav {
+  margin: 0px 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .header header nav {
+    margin: 0px 0px;
+    font-size: 2rem;
+  }
+}
+.header header nav a {
+  margin: 0px 20px;
+  text-decoration: none;
+  color: #000000;
+}
+@media (max-width: 500px) {
+  .header header nav a {
+    margin: 0px 15px;
+  }
+}
+section.about {
+  background: url('/img/ArtboardAbout.svg') no-repeat center;
+  background-size: cover;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  section.about {
+    margin-top: 150px;
+  }
+}
+section.about h2 {
+  color: #41826E;
+}
+section.about .about-div {
+  border: 1px solid #FFFFFF;
+  height: 250px;
+}
+@media (max-width: 500px) {
+  section.about .about-div {
+    width: 90%;
+  }
+}
+@media (max-width: 1050px) {
+  section.about .about-div h1 {
+    margin: auto 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  section.about .about-div h1 {
+    margin: auto 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  section.about .about-div h2 {
+    font-size: 1.5rem;
+  }
+}
+section.about-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+section.about-section img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  section.about-section img {
+    width: inherit;
+  }
+}
+section.about-section div.about-content {
+  background: url('/img/bump-collaboration-colleagues-1068523.jpg') no-repeat;
+  background-size: contain;
+  height: 550px;
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1050px) {
+  section.about-section div.about-content {
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  section.about-section div.about-content {
+    height: inherit;
+    width: 100%;
+  }
+}
+section.about-section div.about-content article {
+  width: 75%;
+  background: white;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgb(5,34,10, .7);
+  color: white;
+}
+@media (max-width: 1050px) {
+  section.about-section div.about-content article {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  section.about-section div.about-content article {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+section.team {
+  background: url('/img/ArtboardTeam.svg') no-repeat center;
+  background-size: cover;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  section.team {
+    margin-top: 150px;
+  }
+}
+section.team .team-div {
+  border: 1px solid #FFFFFF;
+  height: 250px;
+}
+@media (max-width: 500px) {
+  section.team .team-div {
+    width: 90%;
+  }
+}
+@media (max-width: 1050px) {
+  section.team .team-div h1 {
+    margin: auto 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  section.team .team-div h1 {
+    margin: auto 50px;
+  }
+}
+section.team-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+section.team-section img {
+  width: 50%;
+}
+section.team-section div.members {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  background: #092432;
+  box-shadow: 10px 10px 5px 0px #75757575;
+}
+@media (max-width: 1050px) {
+  section.team-section div.members {
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  section.team-section div.members {
+    width: 85%;
+  }
+}
+section.team-section div.members hr {
+  background: black;
+  width: 100%;
+  border-radius: 30%;
+}
+section.team-section div.members div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  color: white;
+}
+section.team-section div.members div i {
+  font-size: 4rem;
+  color: #41826E;
+  margin-bottom: 30px;
+}
+section.team-section div.members div h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+section.team-section div.members div img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+section.team-section div.members div div {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  section.team-section div.members div div {
+    width: 75%;
+  }
+}
+section.team-section div.members div div p {
+  text-align: center;
+}
