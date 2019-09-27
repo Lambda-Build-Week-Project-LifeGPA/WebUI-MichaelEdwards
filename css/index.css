@@ -312,7 +312,7 @@ section.content .HowTo .cnt img {
 }
 @media (max-width: 500px) {
   section.content .HowTo .cnt img {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 section.content .HowTo .cnt div {
@@ -381,11 +381,15 @@ section.info div {
   justify-content: space-evenly;
   align-items: center;
   color: #41826E;
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   section.info div {
     width: initial;
   }
+}
+section.info div i {
+  font-size: 2rem;
 }
 section.info div p {
   text-align: center;
@@ -639,7 +643,7 @@ section.about-section div.about-content article {
   background: white;
   font-size: 1.5rem;
   text-align: center;
-  background-color: rgb(5,34,10, .7);
+  background-color: #05220a;
   color: white;
 }
 @media (max-width: 1050px) {
